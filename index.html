@@ -3,54 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Randerson</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"> 
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Portfólio Generation Brasil</title>
 </head>
 <body>
-
     <header>
-        <h1>Portfólio</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="pagina2.html">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="pagina2.html#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="menu-content">
+            <a href="index.html" id="titulo">Portfólio</a>
+            <nav>
+                <ul class="menu-list">
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section>
-            <p>Olá.. eu sou o Randerson.. 💻</p>
-            
-            <h2>Desenvolvedor Full Stack</h2>
-            
-            <p>Transformo linhas de código em soluções criativas e experiências digitais memoráveis.</p>
-            
-            <a href="pagina2.html#contato">Entre em Contato</a>
-            <a href="#projetos">Saiba Mais...</a>
-
-            <br><br>
-
-            <img src="minha-foto.jpg" alt="Foto de Randerson" width="300">
+    <main> 
+        <section id="hero" class="section-container hero-container">
+            <article class="hero-content">
+                <span>👋 Olá, eu sou a Generation Brasil</span>
+                <h1>Desenvolvedor Full Stack</h1>
+                <p>Transformo ideias em código e crio experiências digitais incríveis.</p>
+                <div class="buttons-container">
+                    <a href="#contact" class="botao">Entre em Contato</a>
+                    <a href="#about" class="botao-outline">Saiba Mais...</a>
+                </div>
+            </article>
+            <figure class="hero-image">
+                <img src="./assets/img/foto_dev_man.svg" alt="Foto do autor" class="float-animation">
+            </figure>
         </section>
 
-        <hr>
+        <section id="about" class="section-container about-container">
+            <figure class="about-image">
+                <img src="./assets/img/avatar_dev_man.svg" alt="Foto do perfil">
+            </figure>
+            <article class="about-content">
+                <h2>Sobre mim</h2>
+                <p>Sou estudante de Sistemas de Informação, com foco em desenvolvimento de software.</p>
+                <div class="about-buttons-data">
+                    <div class="buttons-container">
+                        <a href="#" class="botao">GitHub</a>
+                        <a href="#" class="botao-outline">Currículo</a>
+                    </div>
+                    <div class="data-container">
+                        <div class="data-item">
+                            <span class="data-number">100</span>
+                            <span class="data-label">Seguidores</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
 
-        <section id="projetos">
-            <h3>Demonstração Técnica</h3>
-            <p>Implementação de mídia nativa (Não carrega automaticamente para performance)</p>
-            
-            <video controls preload="none" poster="https://via.placeholder.com/600x340" width="500">
-                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                Seu navegador não suporta a tag de vídeo.
-            </video>
+        <section id="contact" class="section-container contact-container">
+            <article class="contact-info">
+                <h2>Entre em Contato</h2>
+                <p>Sinta-se à vontade para entrar em contato!</p>
+                <div class="social-container">
+                    <a href="#" class="social-icon"><img src="./assets/icons/social/linkedin.svg" alt="LinkedIn"></a>
+                </div>
+            </article>
+            <form id="formulario">
+                <label for="nome">Nome</label>
+                <input id="nome" type="text" placeholder="Seu nome">
+                <button class="botao" type="submit">Enviar Mensagem</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Randerson | Focado em SEO e Acessibilidade</p>
+        <p>Desenvolvido por Generation Brasil 2026.</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
