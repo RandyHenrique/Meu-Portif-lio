@@ -1050,5 +1050,13 @@ footer {
         max-width: 20rem;
         padding: 0.75rem var(--spacing-lg);
     }
-
+/* Troque o #formulario span por este seletor mais forte */
+form#formulario span[id^="erro-"] {
+    color: #e63946 !important; /* Cor que você definiu nas variáveis */
+    font-size: var(--text-sm);
+    display: block !important;
+    visibility: visible !important;
+    margin-top: 5px !important;
+    min-height: 1.2rem;
+}
 }
